@@ -82,6 +82,7 @@ const ProductDetail = () => {
                 className="btn btn-primary"
                 onClick={() => {
                   addCart(product, qtySelect);
+                  setQtySelect(1);
                 }}
               >
                 加入購物車

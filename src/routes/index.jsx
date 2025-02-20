@@ -3,6 +3,7 @@ import Home from "../pages/Home";
 import Carts from "../pages/Carts";
 import ProductDetail from "../pages/Productdetail";
 import ProductList from "../pages/Productlist";
+import NotFound from "../pages/NotFound";
 
 export const routes = [
   {
@@ -24,6 +25,10 @@ export const routes = [
       {
         path: "product",
         element: <ProductList />,
+      },
+      {
+        path: "*",
+        element: <NotFound />,
       },
     ],
   },
